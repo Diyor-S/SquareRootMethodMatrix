@@ -52,9 +52,11 @@ $$
 ### B. Input Matrices (V=18)
 
 **Coefficient Matrix A:**
+
 ![Matrix A](assets/Amatrix.png)
 
 **Free Term Vector B:**
+
 ![B vector](assets/Bvalue.png)
 
 
