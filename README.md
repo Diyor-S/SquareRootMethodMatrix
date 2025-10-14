@@ -53,7 +53,8 @@ $$
 
 **Coefficient Matrix A:**
 $$
-A = \begin{pmatrix}
+A = 
+\begin{pmatrix}
 19 & 20 & -18 & 72 & -18 \\
 22 & -36 & 54 & -18 & 72 \\
 20 & 22 & -19 & 19 & -21 \\
@@ -64,7 +65,8 @@ $$
 
 **Free Term Vector B:**
 $$
-B = \begin{pmatrix}
+B = 
+\begin{pmatrix}
 1408 \\
 2068 \\
 378 \\
