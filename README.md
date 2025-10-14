@@ -52,28 +52,11 @@ $$
 ### B. Input Matrices (V=18)
 
 **Coefficient Matrix A:**
-$$
-A = 
-\begin{bmatrix}
-19 & 20 & -18 & 72 & -18 \\
-22 & -36 & 54 & -18 & 72 \\
-20 & 22 & -19 & 19 & -21 \\
-21 & 23 & -19 & 20 & -22 \\
-18 & 19 & 20 & 21 & 22
-\end{bmatrix}
-$$
+![Matrix A](assets/Amatrix.png)
 
 **Free Term Vector B:**
-$$
-B = 
-\begin{bmatrix}
-1408 \\
-2068 \\
-378 \\
-417 \\
-1997
-\end{bmatrix}
-$$
+![B vector](assets/Bvalue.png)
+
 
 ---
 
@@ -82,5 +65,5 @@ $$
 The program generates the following results:
 
 1.  **Symmetrized Matrix A** ($\overline{A} = A^T A$)
-2.  **Determinant of A** ($\det(A)$)
+2.  **Determinant of A** (`det(A)`)
 3.  **Solution Vector X** ($X$)
