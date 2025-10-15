@@ -3,6 +3,7 @@ from core import (
     cheolesky_factorization,
     forward_substitution,
     backward_substitution,
+    calculate_determinant_of_symmetrized_A,
 )
 from utils.symmetry_check import is_symmetric, is_positive_definite
 
@@ -14,14 +15,15 @@ def _calculation_handler(func):
         else:
             symmetrized_A, mod_B = A, B
 
-        return func(symmetrized_A, mod_B)
+        return func(symmetrized_A, mod_B), symmetrized_A
 
     return wrapper
 
 
 @_calculation_handler
-def calculate_matrix(symmetrized_A, mod_B):
-    S = cheolesky_factorization(symmetrized_A)
-    Y = forward_substitution(S, mod_B)
+def calculate_matrix(A, B):
+    S = cheolesky_factorization(A)
+    det_A = calculate_determinant_of_symmetrized_A(S)
+    Y = forward_substitution(S, B)
     X = backward_substitution(S, Y)
-    return X
+    return X, det_A
