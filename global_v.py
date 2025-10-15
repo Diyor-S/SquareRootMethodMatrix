@@ -17,4 +17,17 @@ B: NDArray[np.float64] = np.array([
     [378],
     [417],
     [1997]
-])
+], dtype=float)
+
+
+A_3: NDArray[np.float64] = np.array([
+    [18, -20, 21],
+    [21, -18, 17],
+    [-20, 21, -18],
+], dtype=float)
+
+B_3: NDArray[np.float64] = np.array([
+    [84],
+    [125],
+    [-20],
+], dtype=float)
