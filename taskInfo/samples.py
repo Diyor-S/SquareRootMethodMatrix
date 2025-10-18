@@ -28,5 +28,15 @@ B - column vector, results we obtain based on the x.
     print(f"Official Solution:\n{X_official}")
     print(f"Your Solution Matches Official: {is_solution_correct}")
 
+    print_initial_state(A_3, B_3)
 
+    (X, det_A), symmetrized_A = calculate_matrix(A_3, B_3)
+    print(symmetrized_A)
+    print(f"My solution:\n{np.around(X, decimals=16)}")
+
+    X_official = np.linalg.solve(A_3, B_3)
+    is_solution_correct = np.allclose(X, X_official)
+
+    print(f"Official Solution:\n{X_official}")
+    print(f"Your Solution Matches Official: {is_solution_correct}")
 """
